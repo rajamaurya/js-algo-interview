@@ -1,0 +1,65 @@
+<html>
+    <head>
+        <style>
+             p + p {
+            text-indent: 1.Sem;
+            margin-bottom: 0;
+            color:rebeccapurple
+        }
+        h2 ~ p {
+	        margin-bottom: 20px;
+            background-color: red;
+        }
+        </style>
+    </head>
+    <body>
+        <ul id = "UI">
+            <li>List item</li>
+            <li>List item</li>
+            <li>List item</li>
+          </ul>
+         <div id="mydiv" style="width: 200px; height:100px; background-color:green">
+            <p id = "m">para1</p>
+            <p id = "my">para2</p>
+            <p id = "mp">para3</p>
+          </div>
+         <p id = "myP"></p>
+         <button id="count">0</button>
+
+         <button id="onEvent">On Event</button>
+         <button id="emitEvent">Emit Event</button>
+         <button id="offEvent">Off Event</button>
+        
+        <h2>Title</h2>
+        <p>Paragraph example.1</p>
+        <p>Paragraph example.2</p>
+        <p>Paragraph example.3</p>
+        
+        <div class=”box”>
+            <p>Paragraph example4.</p>
+            <p>Paragraph example.5</p>
+        </div>
+        <div class='a' id="root">
+            <p>awe</p>
+            <div class='b' id='b-1'>
+              <div class='a' id='a-2'>
+                  <p>awe</p>
+                <div class='d' id='d-1'></div>
+              </div>
+              <div class='c' id='c-1'>
+                <div class='a' id='a-3'>
+                    <p>awe</p>
+                  <div class='d' id='d-2'></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        <script src="./fb_DomStore.js"></script>
+        <script src="/DOM/EventTarget.js"></script>
+        <script src="/DOM/NodeList.js"></script>
+        <script src = "./fb_EventEmitter.js"></script>
+        <script src="/JS_PATTERNS/pub_sub.js"></script>
+        <script src="/DOM/getElementsByClassName.js"></script>
+    </body>
+</html>
