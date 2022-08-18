@@ -32,7 +32,6 @@ const dfs = (root, depth = 1) => {
     }
     
      if(root.left !== null || root.right !== null ){
-         depth+=1;
          let leftDepth = dfs(root.left);
          let rightDepth = dfs(root.right);
          depth = Math.max(leftDepth,rightDepth)+1;
